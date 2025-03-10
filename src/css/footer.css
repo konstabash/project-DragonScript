@@ -56,6 +56,11 @@
   margin-bottom: 32px;
 }
 
+.form-error-message {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
 .form-input {
   width: 100%;
   padding-bottom: 20px;
@@ -70,11 +75,12 @@
   overflow: hidden;
   white-space: nowrap;
   outline: none;
-  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-bottom-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:not(:last-child) {
-  margin-bottom: 16px;
+.form-second-input {
+  margin-top: 16px;
 }
 
 .form-input::placeholder {
@@ -148,17 +154,20 @@
     margin-bottom: 18px;
     display: flex;
     gap: 32px;
-    align-items: center;
+    align-items: baseline;
   }
 
   .form-input-container {
     display: flex;
+    align-items: start;
     gap: 32px;
     margin-bottom: 0;
   }
-  .form-input:not(:last-child) {
-    margin-bottom: 0;
+
+  .form-second-input {
+    margin-top: 0;
   }
+
   .form-input {
     width: 245px;
   }
@@ -195,5 +204,92 @@
 
   .form-input {
     width: 390px;
+  }
+}
+
+.backdrop {
+  background-color: rgba(15, 15, 16, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1c1d20;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 91.5%;
+}
+
+.close-icon {
+  top: 0;
+  left: 0;
+  stroke: #fafafa;
+  position: absolute;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover,
+.close-icon:focus,
+.close-icon:active {
+  stroke: rgba(250, 250, 250, 0.6);
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-heading {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-paragraph {
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+@media only screen and (min-width: 375px) {
+  .modal {
+    width: 343px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 62px;
+    width: 492px;
+  }
+  .modal-close-btn {
+    width: 24px;
+    height: 24px;
   }
 }
