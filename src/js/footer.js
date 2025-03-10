@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import iconError from '/img/error.svg';
+
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 const refs = {
@@ -11,6 +15,15 @@ const refs = {
   isValidMessage: document.querySelector('.form-error-message'),
 };
 const regex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+const errorObj = {
+  position: 'topRight',
+  message: 'An error occurred while processing your request. Please try again.',
+  messageColor: '#fafafb',
+  messageSize: '16px',
+  backgroundColor: '#ed3b44',
+  iconUrl: iconError,
+};
 
 refs.form.addEventListener('submit', onSubmit);
 refs.userEmail.addEventListener('blur', blurEmailHandler);
@@ -55,7 +68,8 @@ async function onSubmit(e) {
     toggleModal();
     document.body.style.overflow = 'hidden';
   } catch {
-    console.log('izitoast');
+    iziToast.error(errorObj);
+    return;
   }
 }
 
