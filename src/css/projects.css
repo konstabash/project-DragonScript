@@ -3,6 +3,7 @@
 *::after {  
   box-sizing: border-box;  
 } 
+
 .project-field {
 font-weight: 600;
 font-size: 16px;
@@ -16,7 +17,6 @@ margin-bottom: 32px;
 
 .projects-wrapper{
     border-radius: 24px;
-    overflow: hidden;
     margin-bottom: 32px;
    
 
@@ -25,7 +25,6 @@ margin-bottom: 32px;
 
 .swiper-slide-part-one {
     background-color: #FAFAFA;
-    height: 417px;
     width: 100%;
     border-radius: inherit;
     border-top-right-radius: 24px;
@@ -180,12 +179,12 @@ transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
     display:flex; 
 }
 .swiper-slide-part-one {
-    width: 688px;
+    width: 50%;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 24px;
 }
 .swiper-slide-part-two {
-    width: 688px;
+    width: 50%;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 24px;
 
