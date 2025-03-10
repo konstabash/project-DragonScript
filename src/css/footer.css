@@ -1,19 +1,26 @@
 .footer {
-  padding-top: 64px;
-  background-image: url(/img/background-1x.png);
+  padding-bottom: 0;
+}
+
+.footer-background-wrapper {
+  /* background-color: #fff; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-image: url(/img/background-1px.png);
   background-repeat: no-repeat;
-  background-position: 290px 0;
-  background-size: contain;
+  background-position: 290px center;
+  background-size: auto;
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .footer {
-    background-image: url(/img/background-2x.png);
+  .footer-background-wrapper {
+    background-image: url(/img/background-2px.png);
   }
 }
 
 .container {
 }
+
 .footer-img {
 }
 
@@ -59,6 +66,9 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   outline: none;
   transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -115,9 +125,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .footer {
-    background-position: 570px 0;
-    padding-top: 136px;
+  .footer-background-wrapper {
+    background-position: 670px center;
+    padding-top: 85px;
     padding-bottom: 169px;
   }
 
@@ -165,12 +175,12 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .footer {
-    background-position: 1040px 0;
-    padding-top: 167px;
+  .footer-background-wrapper {
+    background-position: 1040px center;
+    padding-top: 80px;
   }
 
-  .footer > .container {
+  .footer-background-wrapper > .container {
     padding: 0 196px;
   }
 
