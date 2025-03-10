@@ -1,28 +1,45 @@
-// import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
-
-
-//   const swiper = new Swiper('.swiper', {
-//     direction: 'horizontal',
-//     loop: true,
-//     spaceBetween: 40,
-
-//     navigation: {
-//       nextEl: '.next-arrow-btn',
-//       prevEl: '.next-arrow-btn',
-//     },
-//   });
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 40,
-    navigation: {
-      nextEl: '.press-button.next-arrow-btn',
-      prevEl: '.press-button.previous-arrow-btn',
-    },
-  });
+const prevButton = document.querySelector('.previous-arrow-btn');
+const nextButton = document.querySelector('.next-arrow-btn');
+
+const swiper = new Swiper('.swiper', {
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: true,
+    shadow: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+    
+  },
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 40,
+  speed: 2000,
+
+  navigation: {
+    nextEl: '.press-button.next-arrow-btn',
+    prevEl: '.press-button.previous-arrow-btn',
+    disabledClass: 'disabled',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+prevButton.classList.add('disabled');
+
+swiper.on('slideChange', () => {
+  if (swiper.isBeginning) {
+    prevButton.classList.add('disabled');
+  } else {
+    prevButton.classList.remove('disabled');
+  }
+
+  if (swiper.isEnd) {
+    nextButton.classList.add('disabled');
+  } else {
+    nextButton.classList.remove('disabled');
+  }
 });  
