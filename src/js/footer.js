@@ -10,8 +10,28 @@ const refs = {
   modal: document.querySelector('.backdrop'),
   isValidMessage: document.querySelector('.form-error-message'),
 };
+const regex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 refs.form.addEventListener('submit', onSubmit);
+refs.userEmail.addEventListener('blur', blurEmailHandler);
+refs.userComment.addEventListener('blur', blurCommentHandler);
+refs.modal.addEventListener('click', closeModal);
+refs.crossBtn.addEventListener('click', toggleModal);
+
+refs.userEmail.addEventListener('input', e => {
+  e.currentTarget.style.borderBottomColor = 'rgba(250, 250, 250, 0.5)';
+  refs.isValidMessage.textContent = '';
+});
+refs.userComment.addEventListener(
+  'input',
+  e => (e.currentTarget.style.borderBottomColor = 'rgba(250, 250, 250, 0.5)')
+);
+document.addEventListener('keydown', e => {
+  if (e.code === 'Escape') {
+    refs.modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+});
 
 async function onSubmit(e) {
   e.preventDefault();
@@ -20,6 +40,7 @@ async function onSubmit(e) {
   }
   refs.isValidMessage.textContent = '';
   refs.userEmail.style.borderBottomColor = 'rgba(250, 250, 250, 0.2)';
+  refs.userComment.style.borderBottomColor = 'rgba(250, 250, 250, 0.2)';
   const inputs = e.currentTarget.elements;
   const user = {
     email: inputs[0].value.trim(),
@@ -30,8 +51,9 @@ async function onSubmit(e) {
   }
   try {
     await sendRequest(user);
-    console.log('modal opened');
     e.target.reset();
+    toggleModal();
+    document.body.style.overflow = 'hidden';
   } catch {
     console.log('izitoast');
   }
@@ -41,11 +63,6 @@ async function sendRequest(user) {
   const { data } = await axios.post('/requests', user);
   return data;
 }
-
-const regex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-
-refs.userEmail.addEventListener('blur', blurEmailHandler);
-refs.userComment.addEventListener('blur', blurCommentHandler);
 
 function showErrorMessage(e) {
   const errorColor = '#e74a3b';
@@ -74,11 +91,9 @@ function blurEmailHandler(e) {
   if (isValid) {
     showSuccessMessage(e);
     e.currentTarget.dataset.state = 'success';
-    console.log('valid');
   } else {
     showErrorMessage(e);
     e.currentTarget.dataset.state = 'error';
-    console.log('invalid');
   }
 }
 
@@ -90,16 +105,10 @@ function blurCommentHandler(e) {
   }
 }
 
-// MODAL
-document.body.style.overflow = 'hidden';
-refs.crossBtn.addEventListener('click', toggleModal);
-
 function toggleModal() {
   refs.modal.classList.toggle('is-open');
   document.body.style.overflow = '';
 }
-
-refs.modal.addEventListener('click', closeModal);
 
 function closeModal(e) {
   if (e.currentTarget !== e.target) {
