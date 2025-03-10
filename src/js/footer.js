@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import iconError from '/img/error.svg';
+import iconError from '/img/sprite.svg#icon-error';
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 

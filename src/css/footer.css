@@ -1,3 +1,7 @@
+input {
+  pointer-events: auto;
+}
+
 .footer {
   padding-bottom: 0;
 }
