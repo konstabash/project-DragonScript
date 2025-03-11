@@ -84,7 +84,7 @@
     padding-top: 26px;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 1440px) {
   #faq-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
