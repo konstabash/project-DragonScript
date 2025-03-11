@@ -1,0 +1,250 @@
+.title-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+.text-container {
+    border-radius: 24px;
+    background-color: #242527;
+    margin-bottom: 16px;
+    padding: 32px 32px 272px 32px;
+    
+}
+.about-me-icon{
+    stroke: #fff;
+}
+
+.title-about-me {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);    
+}
+#functional-span{
+    color: #ED3B44;
+}
+#website-span{
+    color: rgba(250, 250, 250, 0.4);
+
+}
+.image-container {
+}
+.about-me-image {
+    border-radius: 24px;
+
+}
+.ac-trigger,
+.accordion-container,
+.ac,
+.ac-header,
+.ac-text,
+.ac .ac-header,
+.ac .ac-trigger,
+.ac .ac-trigger::after,
+.ac .ac-panel .ac-text {
+  all: unset;
+}
+
+.about-me-accordion-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+#about-me-item-accordion{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    width: 100%;
+}
+.about-me-item-theme{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+#about-me-subtitle{
+    font-family: var(--font-family);
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+#about-me-answer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+.about-me-accordion-text{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+}
+#about-me-subtitle-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 23px;
+    margin-bottom: 12px;
+}
+#about-me-text-pad{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+}
+.container-swipper-about-me {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 55px;
+}
+.about-me-buttons-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+}
+.item-about-me-buttons {
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 130px;
+    height: 130px;
+}
+.title-about-me-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.active{
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 130px;
+    height: 130px;
+    background-color: #ED3B44;
+}
+#react-button,
+#node-js-button,
+#react-native-button,
+#soft-skills-button{
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .text-container{
+        padding:64px 64px 436px 64px;
+    }
+    .title-about-me{
+        font-size: 38px;
+        line-height: 1.05263;
+    }
+    .container-swipper-about-me{
+        margin-top: 64px;
+        gap: 64px;
+    }
+    .item-about-me-buttons{
+        width: 200px;
+        height: 200px;
+    }
+    .title-about-me-items{
+        font-size: 20px;
+    }
+    .about-me-accordion-list{
+        gap: 32px;
+    }
+    #about-me-subtitle-container{
+        gap: 380px;
+    }
+    #about-me-answer{
+        gap: 16px;
+    }
+    .active{
+        width: 200px;
+        height: 200px;
+    }
+    #react-button{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .title-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .text-container{
+        max-width: 680px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-bottom: 96px;
+        gap: 16px;
+    }
+    .image-container{
+        max-width: 680px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me-accordion-list{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 32px;
+    }
+    /* #about-me-text-pad{
+        margin-right: 0px;
+        margin-left: auto;
+    } */
+    #about-me-item-accordion{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #about-me-subtitle-container{
+        gap: 1052px;
+    }
+    #about-me-answer{
+        padding: 8px 0px 32px 696px;
+    }
+
+    .container-swipper-about-me{
+        margin-top: 96px;
+        gap: 72px;
+    }
+
+    #react-button,
+    #node-js-button,
+    #react-native-button,
+    #soft-skills-button{
+        display: flex;
+    }
+}
