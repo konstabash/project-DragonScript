@@ -55,6 +55,9 @@
 <path fill="none" stroke="#fafafa" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #fafafa)" d="M21.333 22c0-0.93 0-1.396-0.115-1.774-0.259-0.852-0.926-1.519-1.778-1.778-0.379-0.115-0.844-0.115-1.774-0.115h-3.333c-0.93 0-1.396 0-1.774 0.115-0.852 0.259-1.519 0.926-1.778 1.778-0.115 0.379-0.115 0.844-0.115 1.774"></path>
 <path fill="none" stroke="#fafafa" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #fafafa)" d="M16 16c1.657 0 3-1.343 3-3s-1.343-3-3-3c-1.657 0-3 1.343-3 3s1.343 3 3 3z"></path>
 </symbol>
+  <symbol id="icon-faq" viewBox="0 0 20 20" fill="none">
+    <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+  </symbol>
 <symbol id="icon-error" viewBox="0 0 24 24">
 <g fill="#FAFAFB" clip-path="url(#a)">
     <path d="M6.81.219A.75.75 0 0 1 7.34 0h9.32a.75.75 0 0 1 .53.219l6.591 6.591a.75.75 0 0 1 .219.53v9.32a.75.75 0 0 1-.219.53l-6.591 6.591a.75.75 0 0 1-.53.219H7.34a.75.75 0 0 1-.53-.219L.219 17.19A.75.75 0 0 1 0 16.66V7.34a.75.75 0 0 1 .219-.53L6.81.219ZM7.65 1.5 1.5 7.65v8.7l6.15 6.15h8.7l6.15-6.15v-8.7L16.35 1.5h-8.7Z"/>
