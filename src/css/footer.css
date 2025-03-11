@@ -9,15 +9,15 @@ input {
 .footer-background-wrapper {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-image: url(/img/background-1px.png);
+  background-image: url(/img/bg-mob-1x.png);
   background-repeat: no-repeat;
-  background-position: 290px center;
-  background-size: auto;
+  background-position: right 0 center;
+  background-size: contain;
 }
 
 @media screen and (min-resolution: 192dpi) {
   .footer-background-wrapper {
-    background-image: url(/img/background-2px.png);
+    background-image: url(/img/bg-mob-2x.png);
   }
 }
 
@@ -128,7 +128,7 @@ input {
 
 @media only screen and (min-width: 768px) {
   .footer-background-wrapper {
-    background-position: 670px center;
+    background-image: url(/img/bg-tab-1x.png);
     padding-top: 85px;
     padding-bottom: 169px;
   }
@@ -179,9 +179,15 @@ input {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .footer-background-wrapper {
+    background-image: url(/img/bg-tab-2x.png);
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .footer-background-wrapper {
-    background-position: 1040px center;
+    background-image: url(/img/bg-des-1x.png);
     padding-top: 80px;
   }
 
@@ -200,6 +206,12 @@ input {
 
   .form-input {
     width: 390px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .footer-background-wrapper {
+    background-image: url(/img/bg-des-2x.png);
   }
 }
 
