@@ -29,6 +29,9 @@ margin-bottom: 32px;
     border-radius: inherit;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
+    padding: 32px;
+
+
    
 }
 .tech-pack {
@@ -36,9 +39,6 @@ margin-bottom: 32px;
     flex-wrap: wrap;
   margin-bottom: 96px;
     gap: 6px;
-    padding: 32px 32px 0px 32px;
-    padding-top: 32px;
-    padding-left: 32px;
     
     
 }
@@ -60,7 +60,6 @@ font-size: 24px;
 line-height: 28px;
 letter-spacing: -3%;
 color:#1C1D20;
-padding: 0px 32px;
 margin-bottom: 32px;
 }
 .project-button {
@@ -75,8 +74,6 @@ font-size: 16px;
 line-height: 100%;
 letter-spacing: -2%;
 color: #FAFAFA;
-margin-left: 32px;
-margin-bottom: 32px;
 padding: 13px 32px;
 transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -136,6 +133,9 @@ transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 @media screen and (min-width: 768px) {
+    .swiper-slide-part-one {
+        padding: 64px;
+    }
     .icon-left-arr,
 .icon-right-arr {
     width: 32px;
@@ -146,8 +146,6 @@ transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
         
     }
     .tech-pack {
-          padding-top: 64px;
-    padding-left: 64px;
         margin-bottom: 164px;
     }
     .tech-pack-item {
@@ -156,14 +154,11 @@ transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
     .project-name {
         font-size: 44px;
         line-height: 44px;
-        width: 550px;
-        padding: 0px 64px;
+        max-width: 495px;
        
     }
     .project-button {
         padding: 18px 50px;
-        margin-left: 64px;
-        margin-bottom: 64px;
     }
     .project-card {
     padding: 120px 45px;
