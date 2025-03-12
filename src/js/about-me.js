@@ -69,7 +69,7 @@ if (aboutSwiperContainer) {
   const aboutSwiper = new Swiper(aboutSwiperContainer, {
     loop: true,
     touchRatio: 1,
-    speed: 500,
+    speed: 600,
     grabCursor: true,
     simulateTouch: true,
     mousewheel: true,
