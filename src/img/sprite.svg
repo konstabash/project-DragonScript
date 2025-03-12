@@ -6,13 +6,13 @@
 <symbol id="icon-down-arr" viewBox="0 0 32 32">
 <path stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M24 12l-8 8-8-8"></path>
 </symbol>
-<symbol id="icon-left-arr" viewBox="0 0 32 32">
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M26.667 16h-21.333"></path>
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M13.333 24l-8-8 8-8"></path>
+<symbol id="icon-left-arr" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M26.6667 16H5.33342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M13.3333 24L5.33325 16L13.3333 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
-<symbol id="icon-right-arr" viewBox="0 0 32 32">
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M5.333 16h21.333"></path>
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M18.667 8l8 8-8 8"></path>
+<symbol id="icon-right-arr" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.33325 16H26.6666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M18.6667 8L26.6667 16L18.6667 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 <symbol id="icon-left-arr-mobile" viewBox="0 0 32 32">
 <path stroke-width="2.56" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M26.24 16h-20.48"></path>
@@ -61,5 +61,18 @@
 <symbol id="icon-test" viewBox="0 0 32 32">
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
 </symbol>
+  <symbol id="icon-faq" viewBox="0 0 20 20" fill="none">
+    <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+  </symbol>
+<symbol id="icon-error" viewBox="0 0 24 24">
+<g fill="#FAFAFB" clip-path="url(#a)">
+    <path d="M6.81.219A.75.75 0 0 1 7.34 0h9.32a.75.75 0 0 1 .53.219l6.591 6.591a.75.75 0 0 1 .219.53v9.32a.75.75 0 0 1-.219.53l-6.591 6.591a.75.75 0 0 1-.53.219H7.34a.75.75 0 0 1-.53-.219L.219 17.19A.75.75 0 0 1 0 16.66V7.34a.75.75 0 0 1 .219-.53L6.81.219ZM7.65 1.5 1.5 7.65v8.7l6.15 6.15h8.7l6.15-6.15v-8.7L16.35 1.5h-8.7Z"/>
+    <path d="M6.969 6.969a.75.75 0 0 1 1.062 0L12 10.939l3.969-3.97a.75.75 0 1 1 1.062 1.062L13.06 12l3.97 3.969a.752.752 0 0 1-1.062 1.062l-3.97-3.97-3.968 3.97a.753.753 0 0 1-1.225-.244.751.751 0 0 1 .163-.818L10.939 12 6.97 8.031a.75.75 0 0 1 0-1.062Z"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h24v24H0z"/>
+    </clipPath>
+  </defs></symbol>
 </defs>
 </svg>
