@@ -1,0 +1,82 @@
+.swiper-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+#reviews .swiper-slide {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  width: 344px;
+  min-height: 302px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.review-avatar {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.swiper-text {
+  color: rgba(250, 250, 250, 0.6);
+  max-height: 120px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.icon-arr {
+  stroke: rgba(250, 250, 250, 1);
+  width: 24px;
+  height: 24px;
+}
+.next-arrow-btn,
+.previous-arrow-btn {
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.press-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.not-found {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.4);
+}
+.not-found-container {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .press-button {
+    gap: 20px;
+  }
+}
