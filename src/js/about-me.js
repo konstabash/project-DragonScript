@@ -3,6 +3,8 @@ import 'accordion-js/dist/accordion.min.css';
 
 import Swiper from 'swiper';
 import 'swiper/css';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,3 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // swipper
+
+  // swipper
