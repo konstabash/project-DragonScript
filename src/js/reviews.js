@@ -6,7 +6,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 async function fetchReviews() {
   try {
-    throw new Error('Test error in fetchReviews');
     const { data } = await axios.get('https://portfolio-js.b.goit.study/api/reviews');
     return data;
   } catch (error) {
@@ -50,21 +49,21 @@ function initSwiper() {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: false,
-    spaceBetween: 40,
+    spaceBetween: 16,
     speed: 2000,
 
     navigation: {
-      nextEl: '.press-button.next-arrow-btn',
-      prevEl: '.press-button.previous-arrow-btn',
+      nextEl: '.next-arrow-btn',
+      prevEl: '.previous-arrow-btn',
       disabledClass: 'disabled',
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
     },
       breakpoints: {
       768: { slidesPerView: 2 },
-      1024: { slidesPerView: 4 },
+      1440: { slidesPerView: 4 },
     },
   });
 
