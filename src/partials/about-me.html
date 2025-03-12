@@ -18,27 +18,27 @@
                     <picture>
                         <source
                           srcset="
-                          ../img/about-me/about-me-pc-1x.jpg   1x,
-                          ../img/about-me/about-me-pc-2x.jpg 2x
+                          /img/about-me/about-me-pc-1x.jpg   1x,
+                          /img/about-me/about-me-pc-2x.jpg 2x
                           "
                           media="(min-width: 1280px)"
                         />
                         <source
                           srcset="
-                          ../img/about-me/about-me-tablet-1x.jpg   1x,
-                          ../img/about-me/about-me-tablet-2x.jpg 2x
+                          /img/about-me/about-me-tablet-1x.jpg   1x,
+                          /img/about-me/about-me-tablet-2x.jpg 2x
                           "
                           media="(min-width: 768px)"
                         />
                         <source
                           srcset="
-                          ../img/about-me/about-me-phone-1x.jpg   1x,
-                          ../img/about-me/about-me-phone-2x.jpg 2x
+                          /img/about-me/about-me-phone-1x.jpg   1x,
+                          /img/about-me/about-me-phone-2x.jpg 2x
                           "
                           media="(max-width: 767px)"
                         />
                         <img
-                          src="../img/about-me/about-me-phone-1x.jpg"
+                          src="/img/about-me/about-me-phone-1x.jpg"
                           alt="Beautiful men"
                           class="about-me-image"
                         />
@@ -53,22 +53,22 @@
                                 About me
                             </h3>
                             <svg class="about-me-icon" width="20" height="20">
-                                    <use href="/img/sprite.svg#icon-up-arr"></use>
+                                    <use href="/img/sprite.svg#icon-down-arr"></use>
                             </svg>
                         </div>
 
                         <div class="ac-panel" id="about-me-answer">
 
                             <p class="ac-text" id="about-me-text-pad">
-                                I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming 
+                                I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming
                                 languages ​​and technologies, always ready to improve my skills. I always follow the latest trends
                                  and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.
                             </p>
 
                             <p class="ac-text" id="about-me-text-pad">
                                 Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding optimal solutions. Professional
-                                 maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work. I am always looking for opportunities 
-                                 for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming 
+                                 maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work. I am always looking for opportunities
+                                 for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming
                                  languages, frameworks and architectural concepts that allow me to create efficient and scalable software.
                             </p>
 
@@ -80,7 +80,7 @@
                                 Role
                             </h3>
                             <svg class="about-me-icon" width="20" height="20">
-                                <use href="../img/sprite.svg#icon-up-arr"></use>
+                                <use href="/img/sprite.svg#icon-down-arr"></use>
                             </svg>
                         </div>
                           <div class="ac-panel" id="about-me-answer">
@@ -95,7 +95,7 @@
                                 EDUCATION
                             </h3>
                         <svg class="about-me-icon" width="20" height="20">
-                            <use href="/img/sprite.svg#icon-up-arr"></use>
+                            <use href="/img/sprite.svg#icon-down-arr"></use>
                           </svg>
                         </div>
                           <div class="ac-panel" id="about-me-answer">
@@ -105,37 +105,43 @@
                         </div>
                     </li>
                 </ul>
-                
+
             </div>
-            <div class="swiper-container container-swipper-about-me">
-                <div class="swiper-wrapper about-me-buttons-container">
-                    <div class="swiper-slide item-about-me-buttons active" id="html-css-button">
-                        <p class="title-about-me-items">HTML/CSS</p>
-                    </div>
-                    <div class="swiper-slide item-about-me-buttons" id="javascript-button">
-                        <p class="title-about-me-items">JavaScript</p>
-                    </div>
-                    <div class="swiper-slide item-about-me-buttons" id="react-button">
-                        <p class="title-about-me-items">React</p>
-                    </div>
-                    <div class="swiper-slide item-about-me-buttons" id="node-js-button">
-                        <p class="title-about-me-items">Node.js</p>
-                    </div>
-                    <div class="swiper-slide item-about-me-buttons" id="react-native-button">
-                        <p class="title-about-me-items">React Native</p>
-                    </div>
-                    <div class="swiper-slide item-about-me-buttons" id="soft-skills-button">
-                        <p class="title-about-me-items">Soft skills</p>
-                    </div>
+            <div class="about-me-slider">
+                <div class="about-me-swiper swiper">
+                  <ul class="about-me-swiper-wrapper swiper-wrapper">
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>HTML/CSS</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>JavaScript</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>React</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>Node.js</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>React Native</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                      <span>Soft skills</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                        <span>Angular</span>
+                    </li>
+                    <li class="about-me-swiper-slide swiper-slide">
+                        <span>Vue</span>
+                    </li>
+                  </ul>
                 </div>
-            
-                <!-- Кнопка має бути тут -->
-                <div class="about-me-button-next">
-                    <svg class="about-me-icon-swipper" width="40" height="40">
-                        <use href="/img/sprite.svg#icon-right-arr"></use>
-                    </svg>
+                <div class="about-me-swiper-next">
+                  <svg class="about-me-icon-next" width="40" height="40">
+                    <use href="/img/sprite.svg#icon-right-arr"></use>
+                  </svg>
                 </div>
-            </div>
+              </div>
         </div>
     </section>
 </body>
