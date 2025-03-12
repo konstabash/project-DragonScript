@@ -4,10 +4,11 @@ import 'accordion-js/dist/accordion.min.css';
 import 'swiper/css/bundle';
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Accordion('.accordion-container', {
+  const accordionAboutMe = new Accordion('.accordion-container', {
     duration: 400,
     showMultiple: true,
   });
+  accordionAboutMe.open(0);
 
 
 // swipper
