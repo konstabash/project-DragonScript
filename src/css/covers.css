@@ -31,6 +31,7 @@
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
 
 .running-img {
