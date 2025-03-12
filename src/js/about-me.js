@@ -69,11 +69,13 @@ const aboutSwiperContainer = document.querySelector('.about-me-swiper');
 if (aboutSwiperContainer) {
   const aboutSwiper = new Swiper(aboutSwiperContainer, {
     loop: true,
+    // loopAdditionalSlides: 6,
     touchRatio: 1,
     speed: 600,
     grabCursor: true,
     simulateTouch: true,
     mousewheel: true,
+    
     navigation: {
       nextEl: '.about-me-swiper-next',
     },
@@ -81,13 +83,15 @@ if (aboutSwiperContainer) {
       enabled: true, 
       onlyInViewport: true 
     },
+    
+    slidesPerGroup:1,
     slidesPerView: 2,
     breakpoints: { 
       768: { 
         slidesPerView: 3 
       }, 
       1440: {
-        slidesPerView: 6 
+        slidesPerView: 6
       } 
     },
   });
