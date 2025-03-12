@@ -36,7 +36,7 @@ if (aboutSwiperContainer) {
         slidesPerView: 3 
       }, 
       1440: {
-        slidesPerView: 6
+        slidesPerView: 6,
       } 
     },
   });
