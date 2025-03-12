@@ -67,6 +67,26 @@
     padding-left: 32px;
 }
 
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .hero::before {
+        width: 75%;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero::before {
+        width: 70%;
+        backdrop-filter: blur(2px);
+        opacity: 1;
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0) 100%);
+            mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0) 100%);
+        
+    }
+}
+
+
 @media (max-width: 1439px) {
     .hero-title {
         font-size: 50px;
@@ -82,6 +102,13 @@
     .hero-title::before {
         content: "HELLO.\A I’M FULLSTACK\A DEVELOPER\A LLOYD\A JEFFERSON.";
         white-space: pre;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .hero-title {
+        font-size: 90px;
+        line-height: 90px;
     }
 }
 
@@ -101,6 +128,13 @@
         content: "HELLO.\A I’M FULLSTACK DEVELOPER\A LLOYD JEFFERSON.";
         white-space: pre;
     }
+}
+
+.hero-container {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 1500;
 }
 
 .hero-contacts {
