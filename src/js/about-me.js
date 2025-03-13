@@ -4,7 +4,7 @@ import 'accordion-js/dist/accordion.min.css';
 import 'swiper/css/bundle';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const accordionAboutMe = new Accordion('.accordion-container', {
+  const accordionAboutMe = new Accordion('.about-me-accordion-container', {
     duration: 400,
     showMultiple: true,
   });
@@ -19,8 +19,7 @@ if (aboutSwiperContainer) {
     speed: 600,
     grabCursor: true,
     simulateTouch: true,
-    mousewheel: true,
-    
+    mousewheel: true,    
     navigation: {
       nextEl: '.about-me-swiper-next',
     },
