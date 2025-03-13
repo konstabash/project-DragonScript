@@ -65,12 +65,6 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-  .logo::before {
-    background-image: url('/img/header-logo@3x.png');
-  }
-}
-
 .logo span {
   font-size: 16px;
   color: #fafafa;
@@ -271,12 +265,6 @@
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .nav-list {
       background-image: url('/img/header-mob-glass-effect@2x.png');
-    }
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-    .nav-list {
-      background-image: url('/img/header-mob-glass-effect@3x.png');
     }
   }
 

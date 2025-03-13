@@ -44,12 +44,6 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-  .hero {
-    background-image: url('/img/hero/rectangle@3x.png');
-  }
-}
-
 .hero::before {
   content: '';
   position: absolute;
@@ -68,12 +62,6 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero::before {
     background-image: url('/img/hero/glass-effect@2x.png');
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-  .hero::before {
-    background-image: url('/img/hero/glass-effect@3x.png');
   }
 }
 
