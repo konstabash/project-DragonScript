@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0 }
   );
 
   observer.observe(coversSection);
