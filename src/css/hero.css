@@ -73,6 +73,14 @@
         width: 75%;
         opacity: 0.5;
     }
+
+    .hero-contacts {
+        gap: 8px;    
+        }
+    
+    .social-links {
+        gap: 8px;   
+        }
 }
 
 @media (max-width: 767px) {
@@ -173,11 +181,10 @@
 @media (max-width: 767px) {
     .hero-contacts {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         bottom: 32px;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 16px;
+        left: auto;
+        transform: none;
         gap: 4px;
     }
 
