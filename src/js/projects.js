@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 const prevButton = document.querySelector('.previous-arrow-btn');
 const nextButton = document.querySelector('.next-arrow-btn');
 
-const swiper = new Swiper('.swiper', {
+const projSwiper = new Swiper('.proj-swiper', {
   effect: 'cube',
   cubeEffect: {
     slideShadows: true,
@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
   loop: false,
   spaceBetween: 40,
   speed: 2000,
-
+  // containerModifierClass: "proj-",
   navigation: {
     nextEl: '.press-button.next-arrow-btn',
     prevEl: '.press-button.previous-arrow-btn',
@@ -30,14 +30,14 @@ const swiper = new Swiper('.swiper', {
 });
 prevButton.classList.add('disabled');
 
-swiper.on('slideChange', () => {
-  if (swiper.isBeginning) {
+projSwiper.on('slideChange', () => {
+  if (projSwiper.isBeginning) {
     prevButton.classList.add('disabled');
   } else {
     prevButton.classList.remove('disabled');
   }
 
-  if (swiper.isEnd) {
+  if (projSwiper.isEnd) {
     nextButton.classList.add('disabled');
   } else {
     nextButton.classList.remove('disabled');
