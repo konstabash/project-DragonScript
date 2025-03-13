@@ -17,7 +17,6 @@ const projSwiper = new Swiper('.proj-swiper', {
   loop: false,
   spaceBetween: 40,
   speed: 2000,
-  // containerModifierClass: "proj-",
   navigation: {
     nextEl: '.press-button.next-arrow-btn',
     prevEl: '.press-button.previous-arrow-btn',
