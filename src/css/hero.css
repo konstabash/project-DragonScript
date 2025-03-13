@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    max-width: 1440px;
     width: 100%;
+    max-width: 100vw;
+    min-width: 320px;
     height: 900px;
     margin: 0 auto;
     background-image: url('/img/hero/rectangle@1x.png');
@@ -14,6 +15,14 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@media (max-width: 319px) {
+    .hero {
+        overflow-x: auto;
+    }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
