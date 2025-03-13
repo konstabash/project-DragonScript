@@ -1,5 +1,4 @@
 import './header.js';
-import './hero.js';
 import './about-me.js';
 import './projects.js';
 import './faq.js';
