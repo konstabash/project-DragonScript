@@ -20,10 +20,11 @@ async function fetchReviews() {
 }
 
 function renderReviews(reviews) {
-  const list = document.querySelector('.swiper-wrapper');
+  const list = document.querySelector('.reviews-swiper-wrapper');
 
   if (reviews.length === 0) {
-    list.innerHTML = '<div class="not-found-container"><p class="not-found">Not found</p></div>';
+    list.innerHTML =
+      '<div class="reviews-not-found-container"><p class="reviews-not-found">Not found</p></div>';
     return;
   }
 
@@ -32,9 +33,9 @@ function renderReviews(reviews) {
       review => `
       <li class="swiper-slide">
         <div class="review-card">
-          <img src="${review.avatar_url}" alt="${review.author}" class="review-avatar">
-          <h3 class="swiper-title">${review.author}</h3>
-          <p class="swiper-text">${review.review}</p>
+          <img src="${review.avatar_url}" alt="${review.author}" class="reviews-avatar">
+          <h3 class="reviews-swiper-title">${review.author}</h3>
+          <p class="reviews-swiper-text">${review.review}</p>
         </div>
       </li>
     `
@@ -43,43 +44,43 @@ function renderReviews(reviews) {
 }
 
 function initSwiper() {
-  const prevButton = document.querySelector('.previous-arrow-btn');
-  const nextButton = document.querySelector('.next-arrow-btn');
+  const prevButton = document.querySelector('.reviews-prev-btn');
+  const nextButton = document.querySelector('.reviews-next-btn');
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.reviews-swiper', {
     direction: 'horizontal',
     loop: false,
     spaceBetween: 16,
     speed: 2000,
 
     navigation: {
-      nextEl: '.next-arrow-btn',
-      prevEl: '.previous-arrow-btn',
-      disabledClass: 'disabled',
+      nextEl: '.reviews-next-btn',
+      prevEl: '.reviews-prev-btn',
+      disabledClass: 'reviews-disabled',
     },
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
-      breakpoints: {
+    breakpoints: {
       768: { slidesPerView: 2 },
       1440: { slidesPerView: 4 },
     },
   });
 
-  prevButton.classList.add('disabled');
+  prevButton.classList.add('reviews-disabled');
 
   swiper.on('slideChange', () => {
     if (swiper.isBeginning) {
-      prevButton.classList.add('disabled');
+      prevButton.classList.add('reviews-disabled');
     } else {
-      prevButton.classList.remove('disabled');
+      prevButton.classList.remove('reviews-disabled');
     }
 
     if (swiper.isEnd) {
-      nextButton.classList.add('disabled');
+      nextButton.classList.add('reviews-disabled');
     } else {
-      nextButton.classList.remove('disabled');
+      nextButton.classList.remove('reviews-disabled');
     }
   });
 }
@@ -91,4 +92,3 @@ async function initReviewsSection() {
 }
 
 document.addEventListener('DOMContentLoaded', initReviewsSection);
-
