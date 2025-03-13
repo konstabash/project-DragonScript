@@ -1,15 +1,15 @@
-.swiper-title {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
 .reviews-title {
   font-weight: 600;
   font-size: 16px;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-#reviews .swiper-slide {
+
+.reviews-swiper-wrapper {
+  display: flex;
+}
+
+.reviews-swiper .swiper-slide {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -18,27 +18,29 @@
   margin-bottom: 32px;
   overflow: hidden;
 }
-.review-avatar {
+
+.reviews-avatar {
   border-radius: 10px;
   width: 48px;
   height: 48px;
   margin-bottom: 32px;
 }
 
-.swiper-text {
+.reviews-swiper-text {
   color: rgba(250, 250, 250, 0.6);
   max-height: 120px;
   overflow: hidden;
   text-overflow: clip;
 }
 
-.icon-arr {
+.reviews-icon-arr {
   stroke: rgba(250, 250, 250, 1);
   width: 24px;
   height: 24px;
 }
-.next-arrow-btn,
-.previous-arrow-btn {
+
+.reviews-prev-btn,
+.reviews-next-btn {
   width: 52px;
   height: 52px;
   border: 1px solid rgba(250, 250, 250, 0.5);
@@ -48,22 +50,26 @@
   justify-content: center;
   background-color: transparent;
 }
-.disabled {
+
+.reviews-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
-.press-button {
+
+.reviews-navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
-.not-found {
+
+.reviews-not-found {
   font-weight: 600;
   font-size: 16px;
   color: rgba(250, 250, 250, 0.4);
 }
-.not-found-container {
+
+.reviews-not-found-container {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -75,8 +81,9 @@
   align-items: center;
   margin-bottom: 32px;
 }
+
 @media only screen and (min-width: 768px) {
-  .press-button {
+  .reviews-navigation {
     gap: 20px;
   }
 }
