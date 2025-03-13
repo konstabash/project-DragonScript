@@ -1,0 +1,71 @@
+.content {
+  position: relative;
+  height: 508px;
+  background-image: url('../img/covers/elements_vectors.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  transform: translateY(-250px);
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin-right: 18px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-direction: alternate;
+}
+
+.running-img {
+  width: 282px;
+  height: 162px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-10%);
+  }
+
+  to {
+    transform: translateX(-400%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    height: 960px;
+  }
+
+  .marquee__line {
+    margin-right: 34px;
+    margin-bottom: 60px;
+  }
+
+  .marquee {
+    transform: translateY(-480px);
+  }
+
+  .running-img {
+    width: auto;
+    height: auto;
+  }
+}
