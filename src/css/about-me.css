@@ -187,9 +187,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me-section {
-    padding-top: 96px;
-  }
   .title-container {
     margin-bottom: 64px;
   }
