@@ -5,6 +5,7 @@
   .ac-text,
   .ac .ac-header,
   .ac .ac-trigger,
+  .ac .ac-trigger::after,
   .ac .ac-panel .ac-text {
     all: unset;
   }
